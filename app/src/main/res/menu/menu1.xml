@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/eq"
+        android:title="Solution d'Equation"
+        app:showAsAction="never" >
+
+        <menu>
+            <item
+                android:id="@+id/eq1"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="Equation 1°"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/eq2"
+                android:icon="@android:drawable/ic_input_add"
+                android:title="Equation 2°"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/set"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="settings"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/Conversion"
+        android:icon="@android:drawable/ic_menu_share"
+
+        android:title="Conversion d'unité"
+        app:showAsAction="never"
+        >
+     <menu>
+         <item
+             android:id="@+id/Vol"
+             android:icon="@mipmap/img_2"
+             android:title="Volume"
+             app:showAsAction="never"
+             />
+         <item
+             android:id="@+id/temp"
+             android:icon="@mipmap/img_1"
+             android:title="Temperature"
+             app:showAsAction="never"
+             />
+         <item
+             android:id="@+id/time"
+             android:icon="@mipmap/img_3"
+             android:title="Temps"
+             app:showAsAction="never" />
+         <item
+             android:id="@+id/masse"
+             android:icon="@mipmap/img_4"
+             android:title="Masse"
+             app:showAsAction="never"
+             />
+     </menu>
+    </item>
+    <item android:id="@+id/cos"
+        android:icon="@android:drawable/ic_menu_zoom"
+        android:title="Fonctions arithmétique"
+        app:showAsAction="never"></item>
+</menu>
