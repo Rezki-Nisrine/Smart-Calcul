@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/app Android/Calculatrice/app/src/main/res/drawable/backg.xml" value="0.1" />
         <entry key="..\:/app Android/Calculatrice/app/src/main/res/drawable/rectangle.xml" value="0.1" />
-        <entry key="..\:/app Android/Calculatrice/app/src/main/res/layout/activity_main.xml" value="0.1546875" />
+        <entry key="..\:/app Android/Calculatrice/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/app Android/Calculatrice/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/app Android/Calculatrice/app/src/main/res/layout/activity_main3.xml" value="0.1" />
+        <entry key="..\:/app Android/Calculatrice/app/src/main/res/layout/activity_main4.xml" value="0.1" />
+        <entry key="..\:/app Android/Calculatrice/app/src/main/res/layout/activity_temp5.xml" value="0.1" />
         <entry key="..\:/app Android/Calculatrice/app/src/main/res/menu/menu1.xml" value="0.1" />
       </map>
     </option>

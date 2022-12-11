@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Smart_Calculatrice"
         tools:targetApi="31">
         <activity
+            android:name=".TempActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity

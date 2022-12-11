@@ -6,6 +6,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -23,20 +24,36 @@ TextView resu;
 
     public void resultat(View view) {
 
-        int a ,b,res=0;
+        double a ,b;
         try {
-             a = Integer.parseInt(val1.getText().toString());
-             b = Integer.parseInt(val2.getText().toString());
-            res = a+b;
-            resu.setText(Integer.toString(res));
+double res= 0;
+String  msg = " ya pas de solution ";
+             a = Double.parseDouble(val1.getText().toString());
+             b = Double.parseDouble(val2.getText().toString());
+             if (b==0){
+                 res =0 ;
+                 resu.setText(Double.toString(res));
+             }
+             else if (a!=0 && b!=0){
+                 res = -b/a ;
+                 resu.setText(Double.toString(res));
+             }
+             else if( a ==0 && b !=0) {
+                 resu.setText("y'a pas de solution ");
+
+          }else{
+                 Toast.makeText(MainActivity2.this, " Y 'a pas de solution", Toast.LENGTH_SHORT).show();
+             }
+
+
 
         } catch(Exception nfe) {
-           /* AlertDialog.Builder c = new AlertDialog.Builder(MainActivity2.this);
+            AlertDialog.Builder c = new AlertDialog.Builder(MainActivity2.this);
             c.setCancelable(true);
             c.setTitle(" veuillez entrer un nombre !!");
-            String chaine ="hi";
-            c.setMessage(chaine);*/
-            Toast.makeText(MainActivity2.this, "YOUR MESSAGE", Toast.LENGTH_SHORT).show();
+            String chaine =" veuillez entrer un nombre ";c.setMessage("enter nombre ");
+            resu.setText(chaine);
+          //  Toast.makeText(MainActivity2.this, "Vous devez tapper un nombre", Toast.LENGTH_SHORT).show();
 
         }
 

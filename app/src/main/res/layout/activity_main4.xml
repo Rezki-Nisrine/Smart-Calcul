@@ -1,9 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/rectangle"
     tools:context=".MainActivity4">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solution d'Equation ax²+bx+c "
+            android:textSize="25dp"
+            android:layout_marginLeft="30dp"
+
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Entrer a :"
+                android:textColor="#41D5E8"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/val1"
+                android:layout_width="122dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Entrer b :"
+                android:textColor="#41D5E8"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/val2"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Entrer c :"
+                android:textColor="#41D5E8"
+                android:textSize="35dp" />
+
+            <EditText
+                android:id="@+id/val3"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="#152325"
+                android:onClick="solution"
+                android:text="Solution"></Button>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:orientation="vertical"
+          android:layout_marginLeft="40dp"
+          >
+
+          <TextView
+              android:id="@+id/sol1"
+              android:layout_width="187dp"
+              android:layout_height="83dp"
+              android:text=" X1 = "
+              android:layout_marginLeft="80dp"
+              android:textColor="#FDEA3E"
+              android:textSize="25dp"/>
+          <TextView
+              android:id="@+id/sol2"
+              android:layout_width="187dp"
+              android:layout_height="83dp"
+              android:text=" X2 = "
+              android:layout_marginLeft="80dp"
+              android:textColor="#FAE63D"
+              android:textSize="25dp"
+
+              />
+
+      </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

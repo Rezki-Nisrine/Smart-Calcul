@@ -74,7 +74,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
 
             <Button
@@ -87,11 +87,11 @@
 
             <TextView
                 android:id="@+id/resu"
-                android:layout_width="122dp"
-                android:layout_height="48dp"
+                android:layout_width="187dp"
+                android:layout_height="83dp"
                 android:layout_marginLeft="80dp"
-                android:textColor="#41D5E8"
-                android:textSize="25dp" />
+                android:textColor="#FFEB3B"
+                android:textSize="25dp"/>
 
         </LinearLayout>
 

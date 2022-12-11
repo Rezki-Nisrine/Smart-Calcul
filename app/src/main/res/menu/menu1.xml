@@ -26,7 +26,23 @@
         android:icon="@android:drawable/ic_menu_manage"
         android:title="settings"
         app:showAsAction="always"
-        />
+        >
+        <menu>
+            <item
+                android:id="@+id/dark"
+                android:icon="@mipmap/dark"
+                android:title="Dark mood"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/light"
+                android:icon="@mipmap/light"
+                android:title="Light mood"
+                app:showAsAction="never"
+                />
+
+        </menu>
+    </item>
     <item
         android:id="@+id/Conversion"
         android:icon="@android:drawable/ic_menu_share"
